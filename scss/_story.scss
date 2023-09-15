@@ -1,0 +1,67 @@
+#story{
+    width: 100%;
+    padding: 100px 0;
+    h1{
+        font: bold 48px/1 "Sedgwick Ave Display";
+        color: orange;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    article{
+        width: 1180px;
+        height: 100vh;
+        position: relative;
+        padding-top: 100px;
+        &:nth-of-type(1){
+            padding-top: 0px;
+        }
+        margin: 0 auto;
+        h2{
+            font: bold 24px/1 "Black And White Picture";
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            span{
+                font: bold 36px/1 "arial";
+                color: #fff;
+            }
+        }
+        p{
+            width: 100%;
+            font: 16px/2 "arial";
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .pic{
+            width: 500px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        b{
+            color: aqua;
+        }
+    }
+}
+
+@media screen and (max-width: 291px){
+    #story{
+        article{
+            width: 100%;
+            height: 100vh;
+            .pic{
+                display: none;
+            }
+            p{
+                font: 16px/1.2 "arial";
+            }
+        }
+    }
+}

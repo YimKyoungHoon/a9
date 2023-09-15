@@ -1,0 +1,206 @@
+#header_sub{
+    width: 100%;
+    background-color: #000;
+    .inner{
+        width: 1180px;
+        height: 150px;
+        margin: 0 auto;
+        position: relative;
+        .pic{
+            position: absolute;
+            left: 30px;
+            bottom: 20px;
+            width: 300px;
+            height: 100px;
+            a{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        nav{     
+            #menuWeb{
+                position: absolute;
+                right: 30px;
+                bottom: 0;
+                li{
+                    float: left;
+                    a{
+                        display: block;
+                        padding: 14px 40px;
+                        font: bold 20px/1 "arial";
+                        color: #777;
+                        &:hover{
+                            background-color: #fff;
+                            color: #555;
+                        }
+                    }
+                }
+            }
+        }
+        .btn{
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+            font-size: 20px;
+            color: #fff;            
+        }
+        .menuMobile{
+            width: 270px;
+            height: 100vh;
+            background-color: #555;
+            position: fixed;
+            top: 0;
+            left: -270px;
+            padding: 35px 35px;
+            z-index: 10;
+            transition: 0.5s;
+            &.on{
+                left: 0;
+            }
+            h1{
+                padding-bottom: 30px;
+                border-bottom: 1px solid #000;
+                a{
+                    display: block;
+                    font: bold 30px/1 "Sedgwick Ave Display";
+                    color: orange;
+                    text-align: center;
+                }
+            }
+            #menuMo{
+                li{
+                    a{
+                        display: block;
+                        width: 100%;
+                        padding: 30px 0;
+                        border-bottom: 1px solid #444;
+                        font: bold 20px/1 "arial";
+                        color: #aaa;
+                        text-align: center;
+                    }
+                }
+            }
+        }    
+    }
+}
+.content{
+    width: 100%;
+    .inner{
+        width: 100%;
+    }
+}
+
+#footer_sub{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #000;
+    .inner{
+        width: 1180px;
+        margin: 0 auto; 
+        display: flex;
+        justify-content: space-between;
+        .pic{
+            width: 400px;
+            height: 200px;
+        }       
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }                    
+        ul{
+            margin-top: 50px;
+            float: right;
+            li{
+                float: left;
+                margin-left: 20px;
+                margin-bottom: 50px;
+                a{
+                    font: bold 16px/1 "arial";
+                    color: #fff;
+                    padding: 14px 40px;
+                    &:hover{
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+            span{
+                display: block;
+                a{
+                    float: left;
+                    font-size: 35px;
+                    color: #fff;
+                    padding: 14px 40px;
+                    :hover{
+                        color: orange;
+                    }
+                }
+            }
+        }      
+    }
+}
+
+@media screen and (max-width: 291px){
+    #header_sub{
+        .inner{
+            width: 100%;
+            .pic{
+                position: absolute;
+                bottom: 50px;
+                width: 150px;
+                height: 50px;
+                a{
+                    img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    }
+                }
+            }
+            nav{     
+                #menuWeb{
+                    display: none;
+                }
+            }
+            .btn{
+                display: block;
+            }
+        }    
+    }
+
+    #footer_sub{
+        .inner{
+            .pic{
+                display: none;
+            }
+            width: 100%;
+            display: inline-block;               
+            ul{
+                float: none;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li{
+                    margin-left: 5px;
+                    a{
+                        padding: 14px 0;
+                    }
+                }
+                span{
+                    a{
+                        padding: 14px 20px;
+                        font-size: 25px;
+                    }
+                    margin-left: 20px;
+                }  
+            }       
+        }
+    }
+}

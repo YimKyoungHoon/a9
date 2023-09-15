@@ -1,0 +1,84 @@
+#news {
+    width: 100%;
+    padding: 200px 0;
+    .inner {
+        width: 1180px;
+        height: 400px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;       
+        h1 {
+            font: bold 48px/1 "Sedgwick Ave Display";
+            color: orange;
+            margin-bottom: 20px;
+        }
+        strong{
+            display: block;
+            font: bold 24px/1 "Black And White Picture";
+            color: #ddd;
+            margin-bottom: 50px;
+        }
+        .wrap {
+            width: 100%;
+            height: 230px;
+            article {
+                float: left;
+                width: 280px;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                .pic {
+                    width: 100%;
+                    height: 180px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: all 0.5s;
+                        opacity: 0.5;
+                    }
+                    &:hover{
+                        img{
+                            opacity: 1;
+                        }
+                    }
+                }
+                h2 {
+                    
+                    text-align: center;
+                    a {
+                        font: bold 24px/2 "Black And White Picture";
+                        color: #555;
+                        
+                        &:hover{
+                            color: orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 291px) {
+    #news {
+		padding: 100px 30px;
+
+		.inner {
+			width: 100%;
+
+			.wrap {
+				article {
+					width: 100%;
+					margin-right: 2%;
+					margin-bottom: 60px;
+					&:nth-of-type(2n) {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
