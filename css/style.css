@@ -643,7 +643,7 @@ footer .inner ul span a :hover {
   color: #fff;
 }
 #visual article .wrap p {
-  font: 16px/1 "arial";
+  font: 16px/1.4 "arial";
   color: #ccc;
 }
 #visual article:nth-of-type(3) h2, #visual article:nth-of-type(3) strong {
@@ -750,7 +750,7 @@ footer .inner ul span a :hover {
     font: normal 16px/1.2 "arial";
   }
   #visual article .wrap p {
-    font: 14px/1 "arial";
+    font: 14px/1.4 "arial";
   }
   #visual nav {
     position: absolute;
@@ -778,14 +778,14 @@ footer .inner ul span a :hover {
     z-index: 3;
   }
   #visual .btns li {
-    width: 50px;
+    width: 30px;
     height: 5px;
     background-color: #fff;
     transition: 0.5s;
     cursor: pointer;
   }
   #visual .btns li.on {
-    width: 100px;
+    width: 70px;
     background-color: #000;
   }
   #visual .bar {
