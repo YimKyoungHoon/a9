@@ -523,8 +523,7 @@ footer .inner ul span a :hover {
   padding: 14px 40px;
 }
 #footer_sub .inner ul li a:hover {
-  background-color: #fff;
-  color: #000;
+  color: yellow;
 }
 #footer_sub .inner ul span {
   display: block;
