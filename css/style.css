@@ -440,7 +440,7 @@ footer .inner ul span a :hover {
 }
 #header_sub .inner .btn {
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
   display: none;
@@ -448,12 +448,12 @@ footer .inner ul span a :hover {
   color: #fff;
 }
 #header_sub .inner .menuMobile {
-  width: 270px;
+  width: 200px;
   height: 100vh;
   background-color: #555;
   position: fixed;
   top: 0;
-  left: -270px;
+  left: -200px;
   padding: 35px 35px;
   z-index: 10;
   transition: 0.5s;
